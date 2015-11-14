@@ -60,7 +60,7 @@ function doGet() {
   
   //email ifttt for ios alert
   var emailAddress = "trigger@recipe.ifttt.com"; //Setup ifttt mail trigger first
-  var message = "DR :: Target " + target_temp + " Current " + current_temp + " Heat ON " + heater_state + " " + " || MBR :: Taregt " + target_temp2 + " Current " + current_temp2 + " Heat ON " + heater_state2;
+  var message = "DR :: Target " + target_temp + " Current " + current_temp + " Heating " + heater_state + " " + " || MBR :: Target " + target_temp2 + " Current " + current_temp2 + " Heating " + heater_state2;
   var subject = "Morning Nest Report :: " + time;
   MailApp.sendEmail({to: emailAddress, subject: subject, htmlBody: message});
 
